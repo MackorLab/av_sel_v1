@@ -20,9 +20,9 @@ def predict(source_img, prompt, negative_prompt, num_inference_steps, seed):
 
     imageio.imwrite("data.png", source_img["image"])
     imageio.imwrite("data_mask.png", source_img["mask"])
-    src = resize(1080, "data.png")
+    src = resize(1024, "data.png")
     src.save("src.png")
-    mask = resize(1080, "data_mask.png")
+    mask = resize(1024, "data_mask.png")
     mask.save("mask.png")
     image = pipe(prompt=prompt, negative_prompt=negative_prompt, image=src, mask_image=mask, num_inference_steps=num_inference_steps).images[0]
     return image
