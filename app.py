@@ -27,7 +27,7 @@ def predict(source_img, prompt, negative_prompt, num_inference_steps, seed):
     image = pipe(prompt=prompt, negative_prompt=negative_prompt, image=src, mask_image=mask, num_inference_steps=num_inference_steps).images[0]
     return image
 
-title='DIAMONIK7777 - SD - Avatar&Selfie - Inpainting'
+title='DIAMONIK7777 - SDXL - Avatar&Selfie - Inpainting'
 description="<p style='text-align: center'>Будь в курсе обновлений <a href='https://vk.com/public221489796'>ПОДПИСАТЬСЯ</a></p>"
 article="<br><br><p style='text-align: center'>Генерация индивидуальной модели с собственной внешностью <a href='https://vk.com/im?sel=-221489796'>ПОДАТЬ ЗАЯВКУ</a></p><br><br><br><br><br>"
 
